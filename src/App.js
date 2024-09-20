@@ -1,25 +1,40 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header';
+import Main from './components/Main';
+import Footer from './components/Footer';
+import Garagem from './components/Garagem';
 
 function App() {
+  let nome = 'maria'
+  let carro1 = {
+    nome: 'classic',
+    cor: 'cinza',
+    ano: 2014,
+    flex: true
+  }
+  let carro2 = {
+    nome: 'fusca',
+    cor: 'azul chechelento',
+    ano: 1402,
+    flex: true
+  }
+
+const apresentaGaragem = (nome) => {
+  alert (`Boas-Vindas à garagem de ${nome}`) 
+}
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <Header/>
+      <Main/>
+      <Footer/> */}
+      <Garagem 
+      carro1={carro1}
+      carro2={carro2}
+      />
     </div>
   );
+
 }
 
 export default App;
