@@ -1,8 +1,7 @@
 import './App.css';
-import Header from './components/Header';
-import Main from './components/Main';
-import Footer from './components/Footer';
-import Garagem from './components/Garagem';
+import Garagem from './components/Garagem/Garagem';
+import Header from './components/Header/Header';
+import GlobalStyle from './globalStyle';
 
 function App() {
   let nome = 'maria'
@@ -25,10 +24,11 @@ const apresentaGaragem = (nome) => {
 
   return (
     <div className="App">
-      {/* <Header/>
-      <Main/>
-      <Footer/> */}
+      <GlobalStyle/>
+      <Header/>
       <Garagem 
+      apresentaGaragem={apresentaGaragem}
+      nome={nome}
       carro1={carro1}
       carro2={carro2}
       />

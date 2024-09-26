@@ -1,4 +1,4 @@
-import Garagem from "./Garagem"
+import Garagem from "./Garagem/Garagem"
 
 function Main () {
     return(
