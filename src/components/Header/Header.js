@@ -1,9 +1,15 @@
 import {ConteinerHeader} from './style'
 
-function Header () {
+function Header (props) {
+
+    const mudaNome = () => {
+        props.setNome ('Casa')
+    }
+
     return(
         <ConteinerHeader>
-        <h1>Garagem de Vendas</h1>
+        <h1>Garagem de {props.nome}</h1>
+        <button onClick={mudaNome}>Mudar o Nome</button>
         </ConteinerHeader>
     )
 }

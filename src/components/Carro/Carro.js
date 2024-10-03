@@ -7,11 +7,11 @@ function Carro (props) {
  <Container>
 
 <ul>
-    <h2>{props.carro.nome}</h2>
+    <h2>{props.automovel.modelo}</h2>
     <img src={carro}/>
-    <li>Cor : {props.carro.cor}</li>
-    <li>Ano : {props.carro.ano}</li>
-    <li>Flex : {props.carro.flex?'Sim':'Não'}</li>
+    <li>Cor : {props.automovel.cor}</li>
+    <li>Ano : {props.automovel.ano}</li>
+    <li>Flex : {props.automovel.flex?'Sim':'Não'}</li>
 </ul>
  </Container>
  )
